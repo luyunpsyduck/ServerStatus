@@ -45,7 +45,7 @@ def ip_status():
 		return False
 #连接数
 def get_connections():
-	cg=’netstat -nat|grep -i "8080"|wc -l‘
+	cg='netstat -nat|grep -i "8080"|wc -l'
 	(status, output) = commands.getstatusoutput(cg)
 	return int(output)
 
