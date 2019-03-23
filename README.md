@@ -39,7 +39,7 @@ chkconfig vnstat on
 mkdir /home/ServerStatus
 #拉取默认配置文件
 cd /home/ServerStatus
-wget --no-check-certificate https://raw.githubusercontent.com/91yun/ServerStatus/master/server/config.json
+wget --no-check-certificate https://raw.githubusercontent.com/luyunpsyduck/ServerStatus/master/server/config.json
 #创建docker镜像
 docker create --name=sss \
 --restart=always \
@@ -97,7 +97,7 @@ yum -y install python-devel
 pip install psutil
 mkdir -p /home/serverstatus
 cd /home/serverstatus
-wget https://github.com/91yun/ServerStatus-1/raw/master/clients/client-psutil.py
+wget https://github.com/luyunpsyduck/ServerStatus-1/raw/master/clients/client-psutil.py
 ```
 编辑客户端配置文件
     vim client-psutil.py
